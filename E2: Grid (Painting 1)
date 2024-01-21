@@ -1,0 +1,95 @@
+<!--
+    Composition with Red, Blue and Yellow by Piet Mondrian
+    recreated by Ecem Ozturk
+    for Interactive Media: Web 501 (Winter 2024)
+    E2: Grid Assignment - Painting 1
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            background: 128,128,128;
+        }
+
+        .painting-1 {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            grid-template-rows: repeat(15, 1fr);
+            grid-template-columns: repeat(15, 1fr);
+        }
+
+        .red {
+            background: #E94734;
+        }
+
+        .cream {
+            background: #FFF9E7;
+        }
+
+        .blue {
+            background: #3A94C0;
+        }
+
+        .yellow {
+            background: #F7DE00;
+        }
+
+        .border-right {
+            border-right: 15px solid #4B4444;
+        }
+
+        .border-bottom {
+            border-bottom: 15px solid #4B4444;
+        }
+
+        .cream-rectangle-one {
+            grid-column: 1 / 4;
+            grid-row: 1 / 5;
+        }
+
+        .red-big-square {
+            grid-column: 4 / 16;
+            grid-row: 1 / 12;
+        }
+
+        .cream-rectangle-two {
+            grid-column: 1 / 4;
+            grid-row: 5 / 12;
+        }
+
+        .blue-rectangle {
+            grid-column: 1 / 4;
+            grid-row: 12 / 16;
+        }
+
+        .cream-rectangle-three {
+            grid-column: 4 / 15;
+            grid-row: 12 / 16;
+        }
+
+        .cream-small {
+            grid-row: span 2;
+        }
+
+        .yellow-small {
+            grid-row: span 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painting-1">
+        <div class="cream cream-rectangle-one border-right border-bottom"></div>
+        <div class="cream cream-rectangle-two border-right border-bottom"></div>
+        <div class="red red-big-square border-bottom"></div>
+        <div class="blue blue-rectangle border-right"></div>
+        <div class="cream cream-rectangle-three border-right"></div>
+        <div class="cream cream-small border-bottom"></div>
+        <div class="yellow yellow-small"></div>
+    </div>
+</body>
+
+</html>
