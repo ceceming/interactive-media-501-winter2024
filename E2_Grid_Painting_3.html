@@ -1,0 +1,1136 @@
+<!--
+   Broadway Boogie Woogie by Piet Mondrian
+    recreated by Ecem Ozturk
+    for Interactive Media: Web 501 (Winter 2024)
+    E2: Grid Assignment - Painting 3
+-->
+
+<!DOCTYPE html>
+
+<head>
+    <style>
+        body {
+            background: (128,128,128); 
+        }
+
+        .painting-3 {
+            display: grid;
+            width: 600px;
+            height: 600px;
+            grid-template-columns: repeat(50, 1fr);
+            grid-template-rows: repeat(50, 1fr);
+        }
+
+        .background-white {
+            background: #F1F1EE;
+        }
+
+        .yellow {
+            background: #E9D32C;
+        }
+
+        .blue {
+            background: #4867BA;
+        }
+
+        .red {
+            background: #AB3D30;
+        }
+
+        .grey {
+            background: #DDDDDB;
+        }
+
+        .bw1 {
+            grid-column: 5 / 7;
+            grid-row: 1 / 2;
+        }
+
+        .bw2 {
+            grid-column: 8 / 13;
+            grid-row: 1 / 2;
+        }
+
+        .bw3 {
+            grid-column: 14 / 28;
+            grid-row: 1 / 2;
+        }
+
+        .y1 {
+            grid-column: 30 / 31;
+            grid-row: 1 / 3;
+        }
+
+        .bw4 {
+            grid-column: 31 / 43;
+            grid-row: 1 / 2;
+        }
+
+        .y2 {
+            grid-column: 3 / 9;
+            grid-row: 2 / 3;
+        }
+
+        .y3 {
+            grid-column: 10 / 12;
+            grid-row: 2 / 3;
+        }
+
+        .y4 {
+            grid-column: 13 / 19;
+            grid-row: 2 / 3;
+        }
+
+        .y5 {
+            grid-column: 20 / 27;
+            grid-row: 2 / 3;
+        }
+
+        .y6 {
+            grid-column: 32 / 37;
+            grid-row: 2 / 3;
+        }
+
+        .g1 {
+            grid-column: 37 / 39;
+            grid-row: 2 / 3;
+        }
+
+        .y7 {
+            grid-column: 39 / 42;
+            grid-row: 2 / 3;
+        }
+
+        .bw5 {
+            grid-column: 1 / 2;
+            grid-row: 3 / 9;
+        }
+
+        .bw6 {
+            grid-column: 3 / 4;
+            grid-row: 3 / 9;
+        }
+
+        .bw7 {
+            grid-column: 5 / 7;
+            grid-row: 3 / 9;
+        }
+
+        .r1 {
+            grid-column: 9 / 12;
+            grid-row: 3 / 6;
+        }
+
+        .bw8 {
+            grid-column: 14 / 15;
+            grid-row: 3 / 9;
+        }
+
+        .r2 {
+            grid-column: 15 / 19;
+            grid-row: 3 / 5;
+        }
+
+        .bw9 {
+            grid-column: 19 / 28;
+            grid-row: 3 / 9;
+        }
+
+        .bw10 {
+            grid-column: 29 / 30;
+            grid-row: 3 / 9;
+        }
+
+        .bw11 {
+            grid-column: 31 / 43;
+            grid-row: 3 / 9;
+        }
+
+        .bw12 {
+            grid-column: 44 / 45;
+            grid-row: 3 / 9;
+        }
+
+        .bw13 {
+            grid-column: 46 / 47;
+            grid-row: 3 / 6;
+        }
+
+        .bw14 {
+            grid-column: 48 / 49;
+            grid-row: 3 / 6;
+        }
+
+        .bw15 {
+            grid-column: 50 / 51;
+            grid-row: 3 / 9;
+        }
+
+        .y8 {
+            grid-column: 2 / 3;
+            grid-row: span 2;
+        }
+
+        .y9 {
+            grid-column: 4 / 5;
+            grid-row: span 2;
+        }
+
+        .g2 {
+            grid-column: 7 / 8;
+            grid-row: span 2;
+        }
+
+        .y10 {
+            grid-row: span 2;
+        }
+
+        .y11 {
+            grid-column: 12 / 14;
+            grid-row: span 2;
+        }
+
+        .y12 {
+            grid-column: 43 / 44;
+            grid-row: span 3;
+        }
+
+        .r3 {
+            grid-column: 15 / 16;
+            grid-row: span 3;
+        }
+
+        .g3 {
+            grid-column: 16 / 18;
+            grid-row: span 2;
+        }
+
+        .r4 {
+            grid-column: 18 / 19;
+            grid-row: span 3;
+        }
+
+        .bw16 {
+            grid-row: span 3;
+        }
+
+        .g4 {
+            grid-column: span 3;
+        }
+
+        .b1 {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        .r5 {
+            grid-column: span 2;
+        }
+
+        .g5 {
+            grid-column: span 4;
+        }
+
+        .y13 {
+            grid-column: span 6;
+        }
+
+        .y14 {
+            grid-column: span 5;
+        }
+
+        .bw17 {
+            grid-row: span 9;
+        }
+
+        .bw18 {
+            grid-column: 8 / 13;
+            grid-row: 10 / 14;
+        }
+
+        .bw19 {
+            grid-column: 14 / 28;
+            grid-row: 10 / 19;
+        }
+
+        .bw20 {
+            grid-column: span 3;
+            grid-row: span 9;
+        }
+
+        .b2 {
+            grid-column: span 4;
+            grid-row: span 3;
+        }
+
+        .bw21 {
+            grid-column: span 5;
+            grid-row: span 9;
+        }
+
+        .b3 {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+
+        .bw22 {
+            grid-column: span 2;
+            grid-row: span 5;
+        }
+
+        .y15 {
+            grid-column: span 6;
+        }
+
+        .y16 {
+            grid-column: span 2;
+        }
+
+        .y17 {
+            grid-row: span 4;
+        }
+
+        .bw23 {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        .b4 {
+            grid-column: span 4;
+            grid-row: span 2;
+        }
+
+        .y18 {
+            grid-column: span 4;
+            grid-row: span 4;
+        }
+
+        .bw24 {
+            grid-column: span 3;
+            grid-row: span 3;
+        }
+
+        .y19 {
+            grid-row: span 3;
+        }
+
+        .y20 {
+            grid-column: span 2;
+            grid-row: span 3;
+        }
+
+        .bw25 {
+            grid-column: span 7;
+            grid-row: span 3;
+        }
+
+        .bw26 {
+            grid-column: span 14;
+            grid-row: span 3;
+        }
+
+        .bw27 {
+            grid-column: span 3;
+            grid-row: span 5;
+        }
+
+        .bw28 {
+            grid-column: span 5;
+            grid-row: span 2;
+        }
+
+        .bw29 {
+            grid-row: span 5;
+        }
+
+        .bw30 {
+            grid-column: span 5;
+            grid-row: span 3;
+        }
+
+        .bw31 {
+            grid-column: span 14;
+            grid-row: span 3;
+        }
+
+        .bw32 {
+            grid-column: span 5;
+            grid-row: span 4;
+        }
+
+        .bw33 {
+            grid-column: span 14;
+            grid-row: span 4;
+        }
+
+        .bw34 {
+            grid-column: span 12;
+            grid-row: span 10;
+        }
+
+        .bw35 {
+            grid-row: span 10;
+        }
+
+        .bw36 {
+            grid-column: span 2;
+            grid-row: span 5;
+        }
+
+        .bw37 {
+            grid-column: span 14;
+            grid-row: span 5;
+        }
+
+        .bw38 {
+            grid-column: span 2;
+            grid-row: span 4;
+        }
+
+        .bw39 {
+            grid-column: span 12;
+            grid-row: span 4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="painting-3">
+        <div class="background-white"></div>
+        <div class="yellow"></div>
+        <div class="background-white"></div>
+        <div class="red"></div>
+        <div class="background-white bw1"></div>
+        <div class="yellow"></div>
+        <div class="background-white bw2"></div>
+        <div class="red"></div>
+        <div class="background-white bw3"></div>
+        <div class="red"></div>
+        <div class="background-white"></div>
+        <div class="yellow y1"></div>
+        <div class="background-white bw4"></div>
+        <div class="yellow"></div>
+        <div class="background-white"></div>
+        <div class="red"></div>
+        <div class="background-white"></div>
+        <div class="yellow"></div>
+        <div class="background-white"></div>
+        <div class="red"></div>
+        <div class="background-white"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow y2"></div>
+        <div class="blue"></div>
+        <div class="yellow y3"></div>
+        <div class="grey"></div>
+        <div class="yellow y4"></div>
+        <div class="grey"></div>
+        <div class="yellow y5"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="yellow y6"></div>
+        <div class="grey g1"></div>
+        <div class="yellow y7"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="background-white bw5"></div>
+        <div class="grey"></div>
+        <div class="background-white bw6"></div>
+        <div class="grey"></div>
+        <div class="background-white bw7"></div>
+        <div class="yellow"></div>
+        <div class="background-white"></div>
+        <div class="red r1"></div>
+        <div class="background-white"></div>
+        <div class="grey"></div>
+        <div class="background-white bw8"></div>
+        <div class="red r2"></div>
+        <div class="background-white bw9"></div>
+        <div class="grey"></div>
+        <div class="background-white bw10"></div>
+        <div class="grey"></div>
+        <div class="background-white bw11"></div>
+        <div class="grey"></div>
+        <div class="background-white bw12"></div>
+        <div class="blue"></div>
+        <div class="background-white bw13"></div>
+        <div class="grey"></div>
+        <div class="background-white bw14"></div>
+        <div class="red"></div>
+        <div class="background-white bw15"></div>
+        <div class="yellow y8"></div>
+        <div class="yellow y9"></div>
+        <div class="grey g2"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow y11"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow y12"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="red r3"></div>
+        <div class="grey g3"></div>
+        <div class="red r4"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="background-white bw16"></div>
+        <div class="grey g4"></div>
+        <div class="background-white bw16"></div>
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="blue b1"></div>
+        <div class="red"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow"></div>
+        <div class="yellow y10"></div>
+        <div class="red b1"></div>
+        <div class="yellow"></div>
+        <div class="red r5"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="grey g5"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="background-white g4"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow g5"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="grey g4"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow g4"></div>
+        <div class="grey"></div>
+        <div class="yellow y13"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="yellow y14"></div>
+        <div class="grey r5"></div>
+        <div class="yellow g4"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="background-white bw17"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white bw17"></div>
+        <div class="grey"></div>
+        <div class="background-white r5"></div>
+        <div class="yellow"></div>
+        <div class="background-white bw18"></div>
+        <div class="grey"></div>
+        <div class="background-white bw19"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white bw17"></div>
+        <div class="grey"></div>
+        <div class="background-white bw20"></div>
+        <div class="blue b2"></div>
+        <div class="background-white bw21"></div>
+        <div class="yellow bw16"></div>
+        <div class="background-white bw17"></div>
+        <div class="grey y10"></div>
+        <div class="background-white y10"></div>
+        <div class="grey y10"></div>
+        <div class="background-white bw17"></div>
+        <div class="grey"></div>
+        <div class="background-white bw17"></div>
+        <div class="yellow bw16"></div>
+        <div class="blue b3"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="red y10"></div>
+        <div class="red"></div>
+        <div class="red b3"></div>
+        <div class="blue"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="red g5"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="background-white bw22"></div>
+        <div class="yellow y15"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="yellow y16"></div>
+        <div class="red"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow bw16"></div>
+        <div class="red"></div>
+        <div class="yellow y17"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="grey bw23"></div>
+        <div class="yellow r5"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow y10"></div>
+        <div class="red"></div>
+        <div class="yellow y16"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="background-white y17"></div>
+        <div class="grey"></div>
+        <div class="yellow y10"></div>
+        <div class="grey y10"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow y10"></div>
+        <div class="grey"></div>
+        <div class="red g5"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="yellow g4"></div>
+        <div class="yellow y10"></div>
+        <div class="blue"></div>
+        <div class="grey"></div>
+        <div class="blue b4"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="background-white y14"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="yellow bw23"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="grey r5"></div>
+        <div class="yellow"></div>
+        <div class="blue r5"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow y18"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow g5"></div>
+        <div class="red"></div>
+        <div class="yellow g5"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="background-white bw24"></div>
+        <div class="yellow y19"></div>
+        <div class="background-white y20"></div>
+        <div class="blue"></div>
+        <div class="background-white y19"></div>
+        <div class="background-white y19"></div>
+        <div class="grey"></div>
+        <div class="background-white bw25"></div>
+        <div class="background-white bw24"></div>
+        <div class="grey"></div>
+        <div class="background-white bw26"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white bw24"></div>
+        <div class="yellow"></div>
+        <div class="background-white y19"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white y19"></div>
+        <div class="grey y10"></div>
+        <div class="yellow y10"></div>
+        <div class="grey"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow y10"></div>
+        <div class="blue"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="yellow y16"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="yellow g4"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="yellow y16"></div>
+        <div class="red"></div>
+        <div class="grey y16"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="grey g5"></div>
+        <div class="blue"></div>
+        <div class="yellow y16"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey y16"></div>
+        <div class="yellow y16"></div>
+        <div class="blue"></div>
+        <div class="yellow g4"></div>
+        <div class="red"></div>
+        <div class="yellow y16"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="background-white bw27"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white bw22"></div>
+        <div class="yellow y19"></div>
+        <div class="background-white bw28"></div>
+        <div class="grey"></div>
+        <div class="background-white bw22"></div>
+        <div class="yellow g4"></div>
+        <div class="background-white bw22"></div>
+        <div class="yellow"></div>
+        <div class="yellow g4"></div>
+        <div class="background-white bw27"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white bw29"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white bw22"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white bw29"></div>
+        <div class="red y14"></div>
+        <div class="background-white bw27"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white bw28"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white bw29"></div>
+        <div class="yellow"></div>
+        <div class="blue g4"></div>
+        <div class="grey b4"></div>
+        <div class="red y10"></div>
+        <div class="grey bw23"></div>
+        <div class="red y10"></div>
+        <div class="red"></div>
+        <div class="red bw30"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="yellow y10"></div>
+        <div class="red bw23"></div>
+        <div class="yellow y10"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="blue bw23"></div>
+        <div class="yellow b4"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow"></div>
+        <div class="yellow y10"></div>
+        <div class="red bw28"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="background-white y14"></div>
+        <div class="yellow"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="blue"></div>
+        <div class="yellow y14"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow g4"></div>
+        <div class="red"></div>
+        <div class="grey r5"></div>
+        <div class="red"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue r5"></div>
+        <div class="grey g4"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow g4"></div>
+        <div class="blue"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="background-white b3"></div>
+        <div class="yellow y19"></div>
+        <div class="background-white y20"></div>
+        <div class="yellow y19"></div>
+        <div class="background-white bw30"></div>
+        <div class="yellow y19"></div>
+        <div class="background-white bw31"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white y19"></div>
+        <div class="yellow y19"></div>
+        <div class="background-white y20"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white y19"></div>
+        <div class="red y14"></div>
+        <div class="background-white b3"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white bw30"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white y19"></div>
+        <div class="grey bw28"></div>
+        <div class="red"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="yellow y16"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="yellow y16"></div>
+        <div class="blue"></div>
+        <div class="yellow y16"></div>
+        <div class="grey"></div>
+        <div class="yellow y16"></div>
+        <div class="red"></div>
+        <div class="yellow y16"></div>
+        <div class="grey"></div>
+        <div class="yellow y16"></div>
+        <div class="blue"></div>
+        <div class="yellow y16"></div>
+        <div class="red"></div>
+        <div class="yellow y16"></div>
+        <div class="blue"></div>
+        <div class="yellow y16"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow y16"></div>
+        <div class="grey"></div>
+        <div class="yellow y16"></div>
+        <div class="blue"></div>
+        <div class="yellow y16"></div>
+        <div class="blue"></div>
+        <div class="yellow g4"></div>
+        <div class="blue"></div>
+        <div class="yellow g4"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="background-white bw23"></div>
+        <div class="yellow"></div>
+        <div class="background-white r5"></div>
+        <div class="yellow"></div>
+        <div class="background-white bw32"></div>
+        <div class="yellow"></div>
+        <div class="background-white bw33"></div>
+        <div class="red"></div>
+        <div class="background-white y17"></div>
+        <div class="blue"></div>
+        <div class="background-white bw34"></div>
+        <div class="grey"></div>
+        <div class="background-white g4"></div>
+        <div class="grey"></div>
+        <div class="background-white y17"></div>
+        <div class="grey"></div>
+        <div class="background-white bw35"></div>
+        <div class="grey"></div>
+        <div class="blue b3"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="yellow y10"></div>
+        <div class="blue b3"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow"></div>
+        <div class=" blue"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow y10"></div>
+        <div class="grey"></div>
+        <div class="background-white b3"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="red"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="yellow r5"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="grey r5"></div>
+        <div class="yellow r5"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow r5"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="yellow bw23"></div>
+        <div class="grey"></div>
+        <div class="yellow y10"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="background-white bw36"></div>
+        <div class="yellow"></div>
+        <div class="background-white y14"></div>
+        <div class="yellow"></div>
+        <div class="background-white bw37"></div>
+        <div class="yellow"></div>
+        <div class="background-white bw29"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="yellow y14"></div>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="yellow y10"></div>
+        <div class="red bw23"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white y10"></div>
+        <div class="yellow y10"></div>
+        <div class="background-white b3"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="yellow y10"></div>
+        <div class="grey"></div>
+        <div class="yellow y10"></div>
+        <div class="red"></div>
+        <div class="yellow y13"></div>
+        <div class="yellow y10"></div>
+        <div class="blue"></div>
+        <div class="yellow g4"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow y13"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="background-white y14"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="red r5"></div>
+        <div class="grey"></div>
+        <div class="blue"></div>
+        <div class="yellow g4"></div>
+        <div class="grey"></div>
+        <div class="yellow r5"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow r5"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="background-white g4"></div>
+        <div class="grey"></div>
+        <div class="background-white bw38"></div>
+        <div class="grey"></div>
+        <div class="background-white bw32"></div>
+        <div class="grey"></div>
+        <div class="background-white bw33"></div>
+        <div class="grey"></div>
+        <div class="background-white y17"></div>
+        <div class="grey"></div>
+        <div class="background-white bw39"></div>
+        <div class="yellow"></div>
+        <div class="background-white bw32"></div>
+        <div class="yellow"></div>
+        <div class="background-white y17"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow y10"></div>
+        <div class="blue"></div>
+        <div class="red"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow y10"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="background-white bw23"></div>
+        <div class="yellow"></div>
+        <div class="yellow"></div>
+        <div class="yellow y10"></div>
+        <div class="yellow y10"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="red"></div>
+        <div class="yellow r5"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow r5"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="red bw23"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="grey"></div>
+        <div class="yellow g4"></div>
+        <div class="blue"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow r5"></div>
+        <div class="red"></div>
+        <div class="yellow"></div>
+        <div class="background-white g4"></div>
+        <div class="yellow"></div>
+        <div class="background-white y15"></div>
+        <div class="background-white y16"></div>
+        <div class="yellow"></div>
+        <div class="background-white y15"></div>
+        <div class="background-white g5"></div>
+        <div class="background-white"></div>
+        <div class="yellow"></div>
+        <div class="background-white"></div>
+        <div class="yellow"></div>
+        <div class="background-white y15"></div>
+        <div class="background-white y15"></div>
+        <div class="grey"></div>
+        <div class="background-white y14"></div>
+        <div class="yellow"></div>
+        <div class="background-white"></div>
+
+    </div>
+</body>
