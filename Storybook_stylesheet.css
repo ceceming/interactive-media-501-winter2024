@@ -1,0 +1,28 @@
+body, html {
+    background-color: #E5E1DA;
+    overflow-y: hidden;
+}
+
+.storybook1 {
+    display: grid;
+    width: 2300px; 
+    height: 1080px;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.scene_color {
+    background: #AAD7D9;
+}
+
+.scene1 {
+    grid-column: 3 / 5;
+    grid-row: 2 / 3;
+}
+
+.scene2 {
+    grid-column: 5 / 7;
+    grid-row: 2 / 3;
+}
