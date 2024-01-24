@@ -1,0 +1,42 @@
+.adobefont_los_feliz {
+    font-family: "los-feliz", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.adobefont_los_feliz_italic {
+    font-family: "los-feliz", serif;
+    font-weight: 400;
+    font-style: italic;
+    transition: color 750ms, transform 750ms;
+
+    &:hover{
+        color: red;
+        transform: translateX(100px);
+    }
+}
+
+.googlefont_rubik {
+    font-family: 'Rubik Burned', system-ui;
+
+    &:hover {
+        animation-name: slide-right;
+        animation-duration: 2s;
+    }
+}
+
+@keyframes slide-right {
+    to {
+        transform: translateX(0);
+
+    }
+    from {
+        transform: translateX(10px);
+
+    }
+}
+
+.adobefont_los_feliz:hover {
+    color: blue;
+    transition: color 750ms;
+}
