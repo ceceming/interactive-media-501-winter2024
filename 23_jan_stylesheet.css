@@ -25,6 +25,19 @@
     }
 }
 
+@font-face {
+    font-family: 'Bespoke1';
+    src: url('fonts/Bespoke-hecVDwBha_.eot');
+    src: url('fonts/Bespoke-hecVDwBha_.eot?#iefix') format('embedded-opentype'),
+       url('fonts/Bespoke-hecVDwBha_.woff') format('woff'),
+       url('fonts/Bespoke-hecVDwBha_.ttf') format('truetype'),
+       url('fonts/Bespoke-hecVDwBha_.svg#Bespoke-hecVDwBha_') format('svg');
+  }
+
+  .self-hosted {
+    font-family: 'Bespoke1', sans-serif;
+  }
+
 @keyframes slide-right {
     to {
         transform: translateX(0);
