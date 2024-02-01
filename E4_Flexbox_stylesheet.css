@@ -25,7 +25,7 @@ ul {
     list-style-type: none;
 }
 
-li {
+.list1 {
     display: inline-block;
 
     &:first-child {
@@ -47,23 +47,83 @@ li {
 }
 
 h1 {
-    font-size: 120px;
+    font-size: 80px;
     line-height: 106px;
 }
 
 h2 {
     font-size: 32px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 15px;
     font-weight: 500;
+    margin-top: 31px;
+    margin-left: 37px;
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 31px;
+    margin-left: 37px;
+    margin-bottom: 9px;
 }
 
 .call-to-action {
+    font-size: 8px;
     text-transform: uppercase;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .info-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 320px;
-    border: 1px solid black;
+    border: 0.5px solid black;
+}
+
+.info-section-item {
+    border-right: 1px solid black;
+}
+
+.sub-paragraph {
+    font-size: 8px;
+    margin-top: 12px;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+
+.call-to-action-info {
+    font-size: 8px;
+    text-transform: uppercase;
+    margin-left: 37px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 3fr 1fr;
+    height: 130px;
+}
+
+.social-links {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 600;
+    justify-self: center;
+    align-self: center;
+}
+
+.list2 {
+    align-self: center;
+    padding-right: 36px;
+    justify-self: right;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.footer-paragraph {
+    font-size: 8px;
+    margin-left: 37px;
 }
