@@ -1,0 +1,9 @@
+body, html {
+    background-color: #E5E1DA;
+    font: sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
