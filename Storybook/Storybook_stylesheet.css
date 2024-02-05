@@ -7,3 +7,42 @@ body, html {
     margin: 0;
     padding: 0;
 }
+
+.scene1 {
+    height: 300px;
+    width: 300px;
+    background-color: #FCD9D4;
+    border: 1px solid black;
+    position: relative;
+    display: inline-block;
+}
+
+.scene2 {
+    height: 300px;
+    width: 300px;
+    background-color: #FFC9C9;
+    border: 1px solid black;
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.scene3 {
+    height: 300px;
+    width: 300px;
+    background-color: #E87B7B;
+    border: 1px solid black;
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.trapezoid {
+    height: 100px;
+    width: 150px;
+    background-color: green;
+    border-bottom: 100px solid blue; /* height of the trapezoid */
+    border-left: 50px solid;
+    border-right: 34px solid;
+    position: relative;
+  }
