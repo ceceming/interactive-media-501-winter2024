@@ -7,19 +7,20 @@
 body {
     background-color: #E5E1DA;
     font: sans-serif;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 
 .scene1 {
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 200px;
     background-color: #FCD9D4;
     border: 1px solid black;
     position: relative;
     display: inline-block;
-    top: 300px;
+    top: 150px;
+    transition: background-color 0.3s;
 
     &:hover {
         background-color: #D4E9FC;
@@ -27,14 +28,14 @@ body {
 }
 
 .scene2 {
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 200px;
     background-color: #FFB4B4;
     border: 1px solid black;
     position: relative;
     display: inline-block;
-    margin-left: 20px;
-    top: 300px;
+    top: 150px;
+    transition: background-color 0.3s;
 
     &:hover {
         background-color: #A5C6F7;
@@ -42,26 +43,438 @@ body {
 }
 
 .scene3 {
-    height: 300px;
-    width: 300px;
+    height: 500px;
+    width: 200px;
     background-color: #E87B7B;
     border: 1px solid black;
     position: relative;
     display: inline-block;
-    margin-left: 20px;
-    top: 300px;
+    top: 150px;
+    transition: background-color 0.3s;
 
     &:hover {
-        background-color: #7BA6E8;
+        background-color: #6BA1F3;
     }
 }
 
-/*.trapezoid {
-    height: 100px;
-    width: 100px;
-    background-color: transparent;
-    border-bottom: 200px solid blue;
-    border-left: 20px solid transparent;
-    border-right: 20px solid transparent;
+.shadow {
+    position: relative;
+    bottom: -145px;
+    left: -90px;
+    width: 200px;
+    height: 105px;
+    background-color: #8F8F8F;
+    border-top: 1px solid black;
+    transform: skew(-60deg);
+}
+
+.circle-sun {
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    background-color: #F8FFCE;
     position: absolute;
+    margin-top: -272px;
+    margin-left: 32px;
+}
+
+a:hover~.circle-sun {
+    background-color: #5570FF;
+}
+
+.window-horizontal {
+    height: 4px;
+    width: 200px;
+    background-color: #414141;
+    position: absolute;
+    margin-top: 55px;
+}
+
+.window-vertical {
+    height: 500px;
+    width: 4px;
+    background-color: #414141;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -354px;
+}
+
+.tree {
+    position: absolute;
+    left: 730px;
+    top: 235px;
+    width: 87px;
+    height: 348px;
+    border-radius: 50%;
+    background-color: #FCD9D4;
+}
+
+a:hover~.tree {
+    background-color: #5570FF;
+}
+
+.tree-trunk {
+    position: absolute;
+    top: 580px;
+    left: 768px;
+    width: 11px;
+    height: 70px;
+    background-color: #FCD9D4;
+    border-bottom: 1px solid black;
+}
+
+a:hover~.tree-trunk {
+    background-color: #5570FF;
+}
+
+.star1 {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
+    margin-left: 10px;
+    margin-top: -100px;
+}
+
+a:hover~.star1 {
+    opacity: 1;
+}
+
+.star2 {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
+    margin-left: 50px;
+    margin-top: -100px;
+}
+
+a:hover~.star2 {
+    opacity: 1;
+}
+
+.star3 {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
+    margin-left: 40px;
+    margin-top: -50px;
+}
+
+a:hover~.star3 {
+    opacity: 1;
+}
+
+.star4 {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
+    margin-left: 30px;
+    margin-top: -150px;
+}
+
+a:hover~.star4 {
+    opacity: 1;
+}
+
+.star5 {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
+    margin-left: 70px;
+    margin-top: -180px;
+}
+
+a:hover~.star5 {
+    opacity: 1;
+}
+
+
+.star6 {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
+    margin-left: 20px;
+    margin-top: -200px;
+}
+
+a:hover~.star6 {
+    opacity: 1;
+}
+
+
+.star7 {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
+    margin-left: 55px;
+    margin-top: -250px;
+}
+
+a:hover~.star7 {
+    opacity: 1;
+}
+
+
+.star8 {
+    position: absolute;
+    opacity: 0;
+    background-color: white;
+    font-size: 20px;
+    width: 1em;
+    height: 1em;
+    clip-path: polygon(50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%);
+    margin-left: 30px;
+    margin-top: -300px;
+}
+
+a:hover~.star8 {
+    opacity: 1;
+}
+
+.sofa {
+    position: relative;
+    top: -80px;
+    right: -580px;
+    width: 209px;
+    height: 136px;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    background-color: #A92222;
+    border: 1px solid black;
+}
+
+.back-cushion {
+    position: absolute;
+    margin: 30px;
+    bottom: 10px;
+    width: 146px;
+    height: 132px;
+    border-top-left-radius: 45%;
+    border-top-right-radius: 45%;
+    background-color: #680000;
+    border: 1px solid black;
+}
+
+.seat-cushion {
+    position: absolute;
+    margin-top: 88px;
+    background-color: #A92222;
+    border: 1px solid black;
+    width: 209px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.sofa-leg {
+    position: absolute;
+    bottom: -10px;
+    width: 20px;
+    height: 10px;
+    background-color: black;
+}
+
+.turkish-carpet {
+    display: grid;
+    grid-template-columns: repeat(30, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    margin: 100px;
+    width: 1000px;
+    height: 600px;
+    background-color: #D4A3A3;
+    border: 1px solid black;
+}
+
+.mustard {
+    background-color: #C59620;
+    transition: background-color 0.2s;
+    transition-delay: background-color 1s;
+    transition-duration: background-color 20s;
+
+    &:hover {
+        background-color: #FFC83B;
+    }
+}
+
+.blue {
+    background-color: #255DA0;
+    transition: background-color 0.2s;
+    transition-delay: background-color 1s;
+    transition-duration: background-color 20s;
+
+
+    &:hover {
+        background-color: #3B95FF;
+    }
+}
+
+.green {
+    background-color: #8FA21E;
+    transition: background-color 0.2s;
+    transition-delay: background-color 1s;
+    transition-duration: background-color 20s;
+
+
+    &:hover {
+        background-color: #B8D028;
+    }
+}
+
+.red {
+    background-color: #901B1B;
+    transition: background-color 0.2s;
+    transition-delay: background-color 1s;
+    transition-duration: background-color 20s;
+
+
+    &:hover {
+        background-color: #D02828;
+    }
+}
+
+.orange {
+    background-color: #D08022;
+    transition: background-color 0.2s;
+    transition-delay: background-color 1s;
+    transition-duration: background-color 20s;
+
+
+    &:hover {
+        background-color: #F99928;
+    }
+}
+
+.rose {
+    background-color: #D4A3A3;
+    transition: background-color 0.2s;
+    transition-delay: background-color 1s;
+    transition-duration: background-color 20s;
+
+
+    &:hover {
+        background-color: #FEC3C3;
+    }
+}
+
+.tassle {
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    left: 246px;
+}
+
+.tassle1 {
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    left: 1255px;
+}
+
+button {
+    position: absolute;
+    width: 80px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 10%;
+    background-color: #E5E1DA;
 }
