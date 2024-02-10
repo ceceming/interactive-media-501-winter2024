@@ -466,6 +466,7 @@ a:hover~.star8 {
 
 button {
     position: absolute;
+    left: 60px;
     top: 300px;
     width: 40px;
     height: 200px;
@@ -569,3 +570,473 @@ button {
     border-radius: 40px;
 }
 
+.single-sofa {
+    position: absolute;
+    left: 350px;
+    top: 450px;
+    width: 275px;
+    height: 275px;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
+    background-color: #A92222;
+    border: 1px solid black;
+    transform: rotate(15deg);
+}
+
+.single-sofa-top {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 236px;
+    height: 236px;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
+    background-color: #A92222;
+    border: 1px solid black;
+}
+
+.single-sofa-button {
+    position: absolute;
+    left: 130px;
+    top: 120px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #A92222;
+    border: 1px solid black;
+}
+
+.single-sofa-back {
+    position: absolute;
+    top: 230px;
+    left: -33px;
+    width: 333px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #A92222;
+    border: 1px solid black;
+}
+
+.single-sofa-dark-red {
+    position: absolute;
+    bottom: 42px;
+    left: 18px;
+    width: 241px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #680000;
+    border: 1px solid black;
+    z-index: 1500;
+}
+
+.single-sofa1 {
+    position: absolute;
+    left: 950px;
+    top: 200px;
+    width: 275px;
+    height: 275px;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
+    background-color: #A92222;
+    border: 1px solid black;
+    transform: rotate(-70deg);
+}
+
+.single-sofa-top1 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 236px;
+    height: 236px;
+    border-top-left-radius: 130px;
+    border-top-right-radius: 130px;
+    background-color: #A92222;
+    border: 1px solid black;
+}
+
+.single-sofa-button1 {
+    position: absolute;
+    left: 130px;
+    top: 120px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #A92222;
+    border: 1px solid black;
+}
+
+.single-sofa-back1 {
+    position: absolute;
+    top: 230px;
+    left: -33px;
+    width: 333px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: #A92222;
+    border: 1px solid black;
+}
+
+.single-sofa-dark-red1 {
+    position: absolute;
+    bottom: 42px;
+    left: 18px;
+    width: 241px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #680000;
+    border: 1px solid black;
+    z-index: 1500;
+}
+
+.backgammon {
+    position: relative;
+    top: 100px;
+    width: 248px;
+    height: 178px;
+    background-color: #0161B9;
+    border: 10px solid #102C46;
+}
+
+.backgammon1 {
+    position: absolute;
+    top: 168px;
+    left: -10px;
+    width: 248px;
+    height: 178px;
+    background-color: #0161B9;
+    border: 10px solid #102C46;
+    z-index: 20;
+}
+
+
+.play-triangle-red {
+    position: absolute;
+    bottom: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+}
+
+.play-triangle-black {
+    position: absolute;
+    bottom: 26px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+}
+
+.play-triangle-red1 {
+    position: absolute;
+    bottom: 53px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    z-index: 500;
+}
+
+.play-triangle-black1 {
+    position: absolute;
+    bottom: 80px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    z-index: 500;
+}
+
+.play-triangle-red2 {
+    position: absolute;
+    bottom: 107px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    z-index: 500;
+}
+
+.play-triangle-black2 {
+    position: absolute;
+    bottom: 134px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    z-index: 500;
+}
+
+.play-triangle-red3 {
+    position: absolute;
+    bottom: -45px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    z-index: 500;
+}
+
+.play-triangle-black3 {
+    position: absolute;
+    bottom: -72px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    z-index: 500;
+}
+
+.play-triangle-red4 {
+    position: absolute;
+    bottom: -99px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    z-index: 500;
+}
+
+.play-triangle-black4 {
+    position: absolute;
+    bottom: -126px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    z-index: 500;
+}
+
+.play-triangle-red5 {
+    position: absolute;
+    bottom: -153px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    z-index: 500;
+}
+
+.play-triangle-black5 {
+    position: absolute;
+    bottom: -180px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    z-index: 500;
+}
+
+.play-triangle-red6 {
+    position: absolute;
+    bottom: -1px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-black6 {
+    position: absolute;
+    bottom: 26px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-red7 {
+    position: absolute;
+    bottom: 53px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-black7 {
+    position: absolute;
+    bottom: 80px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-red8 {
+    position: absolute;
+    bottom: 107px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-black8 {
+    position: absolute;
+    bottom: 134px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-red9 {
+    position: absolute;
+    bottom: -45px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-black9 {
+    position: absolute;
+    bottom: -72px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-red10 {
+    position: absolute;
+    bottom: -99px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-black10 {
+    position: absolute;
+    bottom: -126px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-red11 {
+    position: absolute;
+    bottom: -153px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: #D71424;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-triangle-black11 {
+    position: absolute;
+    bottom: -180px;
+    right: -1px;
+    width: 100px;
+    height: 26px;
+    background-color: black;
+    clip-path: polygon(0 100%, 100% 50%, 0 0);
+    transform: rotate(180deg);
+    z-index: 500;
+}
+
+.play-circle-white {
+    position: absolute;
+    top: 27px;
+    right: -1px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border: 0.5px solid black;
+    z-index: 2000;
+}
+
+.play-circle-white1 {
+    position: absolute;
+    bottom: -100px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border: 0.5px solid black;
+    z-index: 2000;
+}
+
+.play-circle-white2 {
+    position: absolute;
+    bottom: -150px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: white;
+    border: 0.5px solid black;
+    z-index: 2000;
+}
+
+.play-circle-black {
+    position: absolute;
+    top: 110px;
+    right: -1px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: black;
+    border: 0.5px solid white;
+    z-index: 2000;
+}
+
+.play-circle-black1 {
+    position: absolute;
+    top: 110px;
+    right: 26px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: black;
+    border: 0.5px solid white;
+    z-index: 2000;
+}
+
+.play-circle-black2 {
+    position: absolute;
+    top: 110px;
+    right: 53px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: black;
+    border: 0.5px solid white;
+    z-index: 2000;
+}
