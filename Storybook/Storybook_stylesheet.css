@@ -385,7 +385,6 @@ a:hover~.star8 {
 
 .mustard {
     background-color: #C59620;
-    transition: background-color 0.2s;
     transition-delay: background-color 1s;
     transition-duration: background-color 20s;
 
@@ -396,7 +395,6 @@ a:hover~.star8 {
 
 .blue {
     background-color: #255DA0;
-    transition: background-color 0.2s;
     transition-delay: background-color 1s;
     transition-duration: background-color 20s;
 
@@ -408,7 +406,6 @@ a:hover~.star8 {
 
 .green {
     background-color: #8FA21E;
-    transition: background-color 0.2s;
     transition-delay: background-color 1s;
     transition-duration: background-color 20s;
 
@@ -420,7 +417,6 @@ a:hover~.star8 {
 
 .red {
     background-color: #901B1B;
-    transition: background-color 0.2s;
     transition-delay: background-color 1s;
     transition-duration: background-color 20s;
 
@@ -432,7 +428,6 @@ a:hover~.star8 {
 
 .orange {
     background-color: #D08022;
-    transition: background-color 0.2s;
     transition-delay: background-color 1s;
     transition-duration: background-color 20s;
 
@@ -444,7 +439,6 @@ a:hover~.star8 {
 
 .rose {
     background-color: #D4A3A3;
-    transition: background-color 0.2s;
     transition-delay: background-color 1s;
     transition-duration: background-color 20s;
 
@@ -459,7 +453,7 @@ a:hover~.star8 {
     width: 10px;
     height: 1px;
     background-color: black;
-    left: 246px;
+    left: 239px;
 }
 
 .tassle1 {
@@ -467,14 +461,111 @@ a:hover~.star8 {
     width: 10px;
     height: 1px;
     background-color: black;
-    left: 1255px;
+    left: 1248px;
 }
 
 button {
     position: absolute;
-    width: 80px;
-    height: 30px;
+    top: 300px;
+    width: 40px;
+    height: 200px;
     border: 1px solid black;
-    border-radius: 10%;
+    border-radius: 5px;
     background-color: #E5E1DA;
 }
+
+.couch {
+    position: absolute;
+    top: 500px;
+    left: 992px;
+    width: 442px;
+    height: 193px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    background-color: #A92222;
+    border: 1px solid black;
+    transform: rotate(-40deg);
+    z-index: 1000;
+
+}
+
+.right-arm {
+    position: absolute;
+    left: -15px;
+    top: 40px;
+    width: 30px;
+    height: 168px;
+    background-color: #680000;
+    border: 1px solid black;
+    border-radius: 25px;
+    z-index: 1500;
+}
+
+.left-arm {
+    position: absolute;
+    right: -15px;
+    top: 40px;
+    width: 30px;
+    height: 168px;
+    background-color: #680000;
+    border: 1px solid black;
+    border-radius: 25px;
+    z-index: 1500;
+}
+
+.couch-back {
+    position: absolute;
+    top: 160px;
+    width: 442px;
+    height: 40px;
+    background-color: #680000;
+    border: 1px solid black;
+    z-index: 1400;
+}
+
+.cushion-button {
+    position: absolute;
+    top: 90px;
+    left: 110px;
+    background-color: #A92222;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    z-index: 1300;
+}
+
+.couch-cushion {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    background-color: #A92222;
+    border: 1px solid black;
+    width: 198px;
+    height: 164px;
+    border-radius: 40px;
+}
+
+.cushion-button1 {
+    position: absolute;
+    top: 90px;
+    right: 110px;
+    background-color: #A92222;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    z-index: 1300;
+}
+
+.couch-cushion1 {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: #A92222;
+    border: 1px solid black;
+    width: 198px;
+    height: 164px;
+    border-radius: 40px;
+}
+
