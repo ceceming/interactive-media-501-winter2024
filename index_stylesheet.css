@@ -1,3 +1,17 @@
 body {
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    margin: 60px;
+    font-size: 20px;
+    height: 90px;
+    width: 180pt;
+    border-radius: 15pt;
+    border: 1pt solid black;
+
+    &:hover {
+        background-color: aquamarine;
+    }
 }
