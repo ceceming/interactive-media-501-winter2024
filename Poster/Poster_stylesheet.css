@@ -6,6 +6,10 @@ body {
     height: 1178px;
 }
 
+.felx-part {
+    display: flex;
+}
+
 .inter-bold {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -102,9 +106,7 @@ footer {
 }
 
 .organizers {
-    position: absolute;
-    top: 200px;
-    left: 104px;
+    padding-left: 104px;
     font-size: 22.9px;
     font-weight: 300;
     line-height: 1.4;
@@ -122,18 +124,15 @@ footer {
 }
 
 .speakers {
-    position: absolute;
-    top: 400px;
-    left: 104px;
+    padding-left: 104px;
     font-size: 22.9px;
     font-weight: 300;
     line-height: 1.4;
 }
 
 .reserve-button {
-    position: absolute;
-    top: 116px;
-    left: 104px;
+    margin-left: 104px;
+    margin-top: 100px;
     font-family: input mono;
     font-size: 25.65px;
     background-color: #AEFFE7;
@@ -147,9 +146,8 @@ footer {
 }
 
 .schedule-button {
-    position: absolute;
-    top: 1012px;
-    left: 104px;
+    margin-left: 104px;
+    margin-bottom: 100px;
     font-family: input mono;
     font-size: 25.65px;
     background-color: #8DFF84;
