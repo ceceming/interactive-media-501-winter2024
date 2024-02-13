@@ -1,19 +1,230 @@
 body {
-
+    margin: 0;
+    padding: 0;
+    background-color: #E8E8E8;
+    font-family: Inter;
+    height: 1178px;
 }
 
-main {
-    display: grid;
+.inter-bold {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
 }
 
-h1 {
-    font-size: 80px;
+.inter-regular {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
 }
 
-h2 {
-    font-size: 30px;
+.inter-light-italic {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" -10;
 }
 
-p {
-    font-size: 20px;
+header {
+    position: flexbox;
+    height: 60px;
+    background-color: #E8E8E8;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+footer {
+    position: flexbox;
+    height: 60px;
+    background-color: #E8E8E8;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.title {
+    position: absolute;
+    top: 46px;
+    right: 116.8px;
+    font-size: 110px;
+    font-weight: 400;
+    text-align: right;
+    z-index: 1000;
+}
+
+.date {
+    position: absolute;
+    top: 400px;
+    left: 730px;
+    font-family: input mono;
+    font-weight: 200;
+    font-size: 25.65px;
+}
+
+.title-box1 {
+    position: absolute;
+    top: 116px;
+    right: 104px;
+    width: 480.11px;
+    height: 139.27px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.title-box2 {
+    position: absolute;
+    top: 254.35px;
+    right: 104px;
+    width: 667.02px;
+    height: 138.35px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.title-box3 {
+    position: absolute;
+    top: 393.5px;
+    right: 104px;
+    width: 273.04px;
+    height: 138.35px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.organizers {
+    position: absolute;
+    top: 200px;
+    left: 104px;
+    font-size: 22.9px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.paragraph {
+    position: absolute;
+    top: 545px;
+    right: 104px;
+    font-size: 18.32px;
+    font-weight: 300;
+    line-height: 1.4;
+    width: 257.46px;
+    height: 522.26px;
+}
+
+.speakers {
+    position: absolute;
+    top: 400px;
+    left: 104px;
+    font-size: 22.9px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+.reserve-button {
+    position: absolute;
+    top: 116px;
+    left: 104px;
+    font-family: input mono;
+    font-size: 25.65px;
+    background-color: #AEFFE7;
+    width: 420px;
+    height: 57px;
+    border: 1px solid black;
+
+    &:hover {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.schedule-button {
+    position: absolute;
+    top: 1012px;
+    left: 104px;
+    font-family: input mono;
+    font-size: 25.65px;
+    background-color: #8DFF84;
+    width: 524px;
+    height: 57px;
+    border: 1px solid black;
+    margin-top: 20px;
+
+    &:hover {
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+    }
+}
+
+.black-lens1 {
+    position: absolute;
+    top: 541px;
+    left: 381px;
+    width: 182px;
+    height: 182px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.lens1 {
+    position: absolute;
+    top: 569px;
+    left: 410px;
+    width: 149px;
+    height: 149px;
+    background: linear-gradient(#FFFCB8, #FFCAFA);
+    border-radius: 50%;
+    z-index: 1200;
+}
+
+.black-lens2 {
+    position: absolute;
+    top: 488px;
+    left: 687px;
+    width: 182px;
+    height: 182px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.lens2 {
+    position: absolute;
+    top: 517px;
+    left: 692px;
+    width: 149px;
+    height: 149px;
+    background: linear-gradient(#A3FFD3, #FFBABA);
+    border-radius: 50%;
+    z-index: 1200;
+}
+
+.black-lens3 {
+    position: absolute;
+    top: 649px;
+    left: 559px;
+    width: 182px;
+    height: 182px;
+    background-color: black;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+.lens3 {
+    position: absolute;
+    top: 650px;
+    left: 581px;
+    width: 149px;
+    height: 149px;
+    background: linear-gradient(#ACE1FF, #9DA1FF);
+    border-radius: 50%;
+    z-index: 1200;
 }
