@@ -36,6 +36,12 @@ body {
         "slnt" -10;
 }
 
+.pt-mono-regular {
+    font-family: "PT Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 header {
     position: flexbox;
     height: 60px;
@@ -66,7 +72,7 @@ footer {
     position: absolute;
     top: 400px;
     left: 730px;
-    font-family: input mono;
+    font-family: monospace;
     font-weight: 200;
     font-size: 25.65px;
 }
@@ -132,7 +138,7 @@ footer {
 .reserve-button {
     margin-left: 104px;
     margin-top: 50px;
-    font-family: input mono;
+    font-family: monospace;
     font-size: 25.65px;
     background-color: #AEFFE7;
     width: 420px;
@@ -147,7 +153,7 @@ footer {
 .schedule-button {
     margin-left: 104px;
     margin-bottom: 100px;
-    font-family: input mono;
+    font-family: monospace;
     font-size: 25.65px;
     background-color: #8DFF84;
     width: 524px;
@@ -239,7 +245,7 @@ footer {
 }
 
 .ticker-text {
-    font-family: input mono;
+    font-family: monospace;
     font-size: 25px;
     display: inline-block;
     margin-right: 100%;
@@ -247,7 +253,7 @@ footer {
 }
 
 .ticker-text {
-    font-family: input mono;
+    font-family: monospace;
     font-size: 25px;
     padding-right: 50px;
     /* Adjust the spacing between repeats */
@@ -270,7 +276,7 @@ footer {
 }
 
 .weekdays {
-    font-family: input mono;
+    font-family: monospace;
 }
 
 .october-23 {
@@ -367,7 +373,7 @@ footer {
 }
 
 .enroll-button {
-    font-family: input mono;
+    font-family: monospace;
     font-size: 12px;
     background-color: #DFFF84;
     width: 100px;
@@ -382,7 +388,7 @@ footer {
 .button-goback {
     margin-left: 104px;
     margin-bottom: 30px;
-    font-family: input mono;
+    font-family: monospace;
     font-size: 25.65px;
     background-color: #C984FF;
     width: 178px;
