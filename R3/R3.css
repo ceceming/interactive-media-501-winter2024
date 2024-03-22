@@ -1,3 +1,48 @@
 body {
     background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+}
+
+.house {
+    position: absolute;
+    height: 800px;
+}
+
+.text-discussion {
+    position: absolute;
+    font-size: 20px;
+    width: 500px;
+    right: 100px;
+    top: 420px;
+}
+
+.childrens-stool {
+    width: 80px;
+    height: 80px;
+    cursor: move;
+    z-index: 500;
+}
+
+.ottoman {
+    width: 200px;
+    height: 200px;
+    cursor: move;
+    z-index: 500;
+}
+
+button {
+    position: absolute;
+    right: 200px;
+    top: 350px;
+    height: 50px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: paleturquoise;
 }
