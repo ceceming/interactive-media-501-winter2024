@@ -1,6 +1,10 @@
 $(function() {
     $('#draggable-ottoman').draggable();
     $('#draggable-stool').draggable();
+    $('#draggable-plant').draggable();
+    $('#draggable-kitchen').draggable();
+    $('#draggable-lamp').draggable();
+    $('#draggable-bed').draggable();
 });
 
 document.getElementById('save-page-btn').addEventListener('click', function() {
