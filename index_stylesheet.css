@@ -1,17 +1,45 @@
 body {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 800px;
 }
 
-button{
-    margin: 60px;
-    font-size: 20px;
-    height: 90px;
-    width: 180pt;
+button {
+    margin: 10px;
+    font-size: 12px;
+    height: 40px;
+    width: 160pt;
     border-radius: 15pt;
     border: 1pt solid black;
 
     &:hover {
         background-color: aquamarine;
+    }
+}
+
+.title {
+    width: 100%;
+    &:hover {
+        background-color: orchid;
+    }
+}
+
+.projects {
+    &:hover {
+        background-color: pink;
+    }
+}
+
+.exercises {
+    &:hover {
+        background-color: yellow;
+    }
+}
+
+.readings {
+    &:hover {
+        background-color: blueviolet;
     }
 }
