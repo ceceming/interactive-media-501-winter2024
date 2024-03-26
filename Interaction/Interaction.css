@@ -8,3 +8,21 @@ body {
     width: 100vw;
     height: 100vh;
 }
+
+.refresh {
+    position: absolute;
+    right: 80px;
+    top: 100px;
+    width: 85px;
+    height: 85px;
+    padding: 20px;
+}
+
+.back {
+    position: absolute;
+    right: 80px;
+    top: 210px;
+    width: 85px;
+    height: 85px;
+    padding: 20px;
+}
