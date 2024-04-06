@@ -4,20 +4,23 @@ body {
     display: flex;
     justify-content: center;
     height: 800px;
-    background-image: image();
 }
 
 button {
-    margin: 10px;
-    font-size: 12px;
-    height: 40px;
-    width: 160pt;
-    border-radius: 15pt;
-    border: 1pt solid black;
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+}
 
+
+.p1-button {
+    width: 150px;
     &:hover {
-        background-color: aquamarine;
+        transform: translateX(-50px) translateY(30px);
     }
+}
+
+.background {
+    width: 100%;
 }
 
 .title {
