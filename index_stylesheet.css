@@ -4,6 +4,7 @@ body {
     display: flex;
     justify-content: center;
     height: 800px;
+    background-image: image();
 }
 
 button {
