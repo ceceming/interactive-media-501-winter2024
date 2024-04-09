@@ -10,16 +10,16 @@ button {
 }
 
 img {
-    width: 250px;
+  width: 150px;
 }
 
-.readings-button {
+.readings-title {
     display: absolute;
     z-index: 1;
 }
 
-.p1-button {
-    width: 150px;
+.every-button {
+  width: 150px;
     &:hover {
         transform: translateX(-50px) translateY(30px);
     }
