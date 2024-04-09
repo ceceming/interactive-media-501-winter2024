@@ -1,5 +1,17 @@
 body {
-    text-align: center;
+  margin: 20px;
+  padding: 0px;
+  text-align: center;
+  font-family: "Inconsolata";
+}
+
+.inconsolata {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 button {
@@ -14,12 +26,7 @@ img {
 .menu-container {
   position: relative;
   display: inline-block;
-  margin: 10px;
-}
-
-.readings-title {
-    display: absolute;
-    z-index: 1;
+  margin: -40px;
 }
 
 .every-button {
