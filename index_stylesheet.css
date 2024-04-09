@@ -1,7 +1,5 @@
 body {
     text-align: center;
-    display: flex;
-    justify-content: center;
 }
 
 button {
@@ -10,7 +8,13 @@ button {
 }
 
 img {
-  width: 150px;
+  width: 250px;
+}
+
+.menu-container {
+  position: relative;
+  display: inline-block;
+  margin: 10px;
 }
 
 .readings-title {
