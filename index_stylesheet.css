@@ -1,16 +1,13 @@
 body {
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     justify-content: center;
-    height: 800px;
 }
 
 button {
     background-color: rgba(0,0,0,0);
     border-color: rgba(0,0,0,0);
 }
-
 
 .p1-button {
     width: 150px;
@@ -19,31 +16,26 @@ button {
     }
 }
 
-.background {
-    width: 100%;
-}
-
-.title {
-    width: 100%;
-    &:hover {
-        background-color: orchid;
-    }
-}
-
-.projects {
-    &:hover {
-        background-color: pink;
-    }
-}
-
-.exercises {
-    &:hover {
-        background-color: yellow;
-    }
-}
-
-.readings {
-    &:hover {
-        background-color: blueviolet;
-    }
-}
+.popup-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .popup-menu a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .popup-menu a:hover {
+    background-color: #ddd;
+  }
+  
+  .show {
+    display: block;
+  }
