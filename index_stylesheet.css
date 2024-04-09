@@ -9,6 +9,15 @@ button {
     border-color: rgba(0,0,0,0);
 }
 
+img {
+    width: 250px;
+}
+
+.readings-button {
+    display: absolute;
+    z-index: 1;
+}
+
 .p1-button {
     width: 150px;
     &:hover {
