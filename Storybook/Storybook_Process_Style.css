@@ -16,6 +16,10 @@ body {
     background-attachment: fixed; /* Fix the background image so it doesn't scroll */
 }
 
+.back {
+    width: 100px;
+}
+
 h1 {
     font-size: 4em;
 }
