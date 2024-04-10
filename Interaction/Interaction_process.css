@@ -16,6 +16,14 @@ body {
     background-attachment: fixed; /* Fix the background image so it doesn't scroll */
 }
 
+.back-white {
+    background-color: white;
+    margin-left: 450px;
+    border: 1px solid black;
+    width: 600px;
+    height: 100 vh;
+}
+
 .back {
     width: 100px;
 }
@@ -40,8 +48,8 @@ h4 {
 
 p {
     font-size: 12pt;
-    margin-left: 160px;
-    margin-right: 160px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
