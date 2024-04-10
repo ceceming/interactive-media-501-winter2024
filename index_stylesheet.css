@@ -15,8 +15,8 @@ body {
 }
 
 button {
-    background-color: rgba(0,0,0,0);
-    border-color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0);
+  border-color: rgba(0,0,0,0);
 }
 
 img {
@@ -24,38 +24,133 @@ img {
 }
 
 .menu-container {
-  position: relative;
-  display: inline-block;
+  position: absolute;
   margin: -40px;
 }
 
 .every-button {
   width: 150px;
-    &:hover {
-        transform: translateX(-50px) translateY(30px);
-    }
+  &:hover {
+    transform: translateX(-50px) translateY(30px);
+  }
 }
 
 .popup-menu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    padding: 10px;
-    z-index: 1;
-  }
-  
-  .popup-menu a {
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: #333;
-  }
-  
-  .popup-menu a:hover {
-    background-color: #ddd;
-  }
-  
-  .show {
-    display: block;
-  }
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 10px;
+  z-index: 1;
+}
+
+.popup-menu a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup-menu a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+.projects {
+  z-index: 65;
+}
+
+.exercises {
+  z-index: 25;
+}
+
+.readings {
+  z-index: 5;
+}
+
+.p1 {
+  top: 150px;
+  right: 580px;
+  z-index: 70;
+}
+
+.p2 {
+  top: 190px;
+  right: 510px;
+  z-index: 75;
+}
+
+.p3 {
+  top: 228px;
+  right: 440px;
+  z-index: 80;
+}
+
+.p4 {
+  top: 266px;
+  right: 370px;
+  z-index: 85;
+}
+
+.e2 {
+  top: 350px;
+  right: 580px;
+  z-index: 45;
+}
+
+.e3 {
+  top: 390px;
+  right: 510px;
+  z-index: 50;
+}
+
+.e4 {
+  top: 428px;
+  right: 440px;
+  z-index: 55;
+}
+
+.e5 {
+  top: 466px;
+  right: 370px;
+  z-index: 60;
+}
+
+.e6 {
+  top: 430px;
+  right: 580px;
+  z-index: 30;
+}
+
+.e7 {
+  top: 470px;
+  right: 510px;
+  z-index: 35;
+}
+
+.e8 {
+  top: 508px;
+  right: 440px;
+  z-index: 40;
+}
+
+.r1 {
+  top: 565px;
+  right: 580px;
+  z-index: 10;
+}
+
+.r2 {
+  top: 605px;
+  right: 510px;
+  z-index: 15;
+}
+
+.r3 {
+  top: 642px;
+  right: 440px;
+  z-index: 20;
+}
