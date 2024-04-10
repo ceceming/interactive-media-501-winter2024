@@ -3,6 +3,10 @@ body {
   padding: 0px;
   text-align: center;
   font-family: "Inconsolata";
+  background-image: url('background.png'); /* Set the background image */
+  background-size: cover; /* Cover the entire background */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  background-attachment: fixed; /* Fix the background image so it doesn't scroll */
 }
 
 .inconsolata {
@@ -38,9 +42,22 @@ img {
 .popup-menu {
   display: none;
   position: absolute;
+  right: 180px;
+  width: 200px;
   background-color: #f9f9f9;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  padding: 10px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.popup-menu1 {
+  display: none;
+  position: absolute;
+  right: 180px;
+  width: 800px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  padding: 50px;
   z-index: 1;
 }
 
@@ -59,98 +76,114 @@ img {
   display: block;
 }
 
+.more{
+  position: absolute;
+  top: 200px;
+  right: 150px;
+  z-index: 90;
+}
+
 .projects {
+  position: absolute;
+  top: 70px;
+  right: 430px;
   z-index: 65;
 }
 
 .exercises {
+  position: absolute;
+  top: 230px;
+  right: 430px;
   z-index: 25;
 }
 
 .readings {
+  position: absolute;
+  top: 445px;
+  right: 430px;
   z-index: 5;
 }
 
 .p1 {
-  top: 150px;
-  right: 580px;
+  top: 200px;
+  right: 380px;
   z-index: 70;
 }
 
 .p2 {
-  top: 190px;
-  right: 510px;
+  top: 240px;
+  right: 310px;
   z-index: 75;
 }
 
 .p3 {
-  top: 228px;
-  right: 440px;
+  top: 278px;
+  right: 240px;
   z-index: 80;
 }
 
 .p4 {
-  top: 266px;
-  right: 370px;
+  top: 316px;
+  right: 170px;
   z-index: 85;
 }
 
 .e2 {
-  top: 350px;
-  right: 580px;
+  top: 360px;
+  right: 380px;
   z-index: 45;
 }
 
 .e3 {
-  top: 390px;
-  right: 510px;
+  top: 400px;
+  right: 310px;
   z-index: 50;
 }
 
 .e4 {
-  top: 428px;
-  right: 440px;
+  top: 438px;
+  right: 240px;
   z-index: 55;
 }
 
 .e5 {
-  top: 466px;
-  right: 370px;
+  top: 476px;
+  right: 170px;
   z-index: 60;
 }
 
 .e6 {
-  top: 430px;
-  right: 580px;
+  top: 440px;
+  right: 380px;
   z-index: 30;
 }
 
 .e7 {
-  top: 470px;
-  right: 510px;
+  top: 480px;
+  right: 310px;
   z-index: 35;
 }
 
 .e8 {
-  top: 508px;
-  right: 440px;
+  top: 518px;
+  right: 240px;
   z-index: 40;
 }
 
 .r1 {
-  top: 565px;
-  right: 580px;
+  top: 575px;
+  right: 380px;
   z-index: 10;
 }
 
 .r2 {
-  top: 605px;
-  right: 510px;
+  top: 615px;
+  right: 310px;
   z-index: 15;
 }
 
 .r3 {
-  top: 642px;
-  right: 440px;
+  top: 652px;
+  right: 240px;
   z-index: 20;
 }
