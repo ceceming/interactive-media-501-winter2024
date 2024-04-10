@@ -4,11 +4,16 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 100px;
     display: flexbox;
     font-size: 8pt;
+    margin: 20px;
+    padding: 0px;
     text-align: center;
+    font-family: "Inconsolata";
+    background-image: url('background.png'); /* Set the background image */
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-attachment: fixed; /* Fix the background image so it doesn't scroll */
 }
 
 h1 {
