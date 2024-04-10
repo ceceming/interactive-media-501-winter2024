@@ -9,7 +9,6 @@ menuContainers.forEach((container) => {
     menu.classList.toggle('show');
   });
 
-  // Close the menu when clicking outside
   document.addEventListener('click', function(event) {
     if (!menu.contains(event.target) && !btn.contains(event.target)) {
       menu.classList.remove('show');
@@ -20,7 +19,6 @@ menuContainers.forEach((container) => {
     menu1.classList.toggle('show');
   });
 
-  // Close the menu when clicking outside
   document.addEventListener('click', function(event) {
     if (!menu1.contains(event.target) && !btn.contains(event.target)) {
       menu1.classList.remove('show');

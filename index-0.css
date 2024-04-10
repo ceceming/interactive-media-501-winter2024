@@ -8,3 +8,73 @@ body {
     background-repeat: no-repeat; /* Do not repeat the background image */
     background-attachment: fixed; /* Fix the background image so it doesn't scroll */
   }
+
+  h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+    margin-top: 40px;
+}
+
+h4 {
+    font-size: 2em;
+    color: #041f98;
+}
+
+p {
+    font-size: 12pt;
+    margin-left: 160px;
+    margin-right: 160px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+figcaption {
+    font-size: 1.25em;
+}
+
+h2, p, figure, figcaption {
+    margin-bottom: 40px;
+}
+img {
+    margin: 10px;
+    max-width: 500px;
+}
+
+.title {
+    margin-bottom: 100px; /* Add spacing to the bottom of the title div */
+}
+
+@media (max-width: 991px) {
+    .process-template {
+        width: 60%;
+    }
+}
+
+@media (max-width:767px) {
+    body {
+        margin: 40px;
+        font-size: 10px;
+    }
+    .process-template {
+        width: 100%;
+    }
+}
+
+button {
+    margin: 60px;
+    height: 90px;
+    width: 180px;
+    font-size: 18pt;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.logos {
+    width: 200px;
+}
