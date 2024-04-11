@@ -24,6 +24,10 @@ body {
     height: 100 vh;
 }
 
+img {
+    width: 300px;
+}
+
 .back {
     width: 100px;
 }
