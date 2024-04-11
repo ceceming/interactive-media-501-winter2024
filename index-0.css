@@ -1,5 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    margin: 0px;
+    display: flexbox;
+    font-size: 8pt;
+    margin: 20px;
     padding: 0px;
     text-align: center;
     font-family: "Inconsolata";
@@ -7,7 +14,7 @@ body {
     background-size: cover; /* Cover the entire background */
     background-repeat: no-repeat; /* Do not repeat the background image */
     background-attachment: fixed; /* Fix the background image so it doesn't scroll */
-  }
+}
 
 .back-white {
     background-color: white;
@@ -19,10 +26,6 @@ body {
 
 .back {
     width: 100px;
-}
-
-a {
-    font-size: 18px;
 }
 
 h1 {
@@ -83,10 +86,10 @@ img {
 }
 
 button {
-    margin: 40px;
+    margin: 60px;
     height: 90px;
     width: 180px;
-    font-size: 12pt;
+    font-size: 18pt;
     border-radius: 10px;
     border: 1px solid black;
 }
